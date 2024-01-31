@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <h1>HI</h1>
+
+        <div class="menu">
+            <h4>upload plików</h4>
+
+            <form enctype="multipart/form-data" method="POST" action="/upload">
+                <input type="file" multiple required accept="*" name="upload" />
+                <button class="sub" type="submit">upload</button>
+            </form>
+
+            <!-- <h4>dodaj plik</h4>
+            <form method="GET" action="/addFile">
+                <input name="name" />
+                <button type="submit">upload</button>
+            </form> -->
+
+            <h4>delete file</h4>
+
+            <form method="GET" action="/deleteFile">
+                <input name="name" type="text" />
+                <button type="submit">upload</button>
+            </form>
+
+            <br />
+            <ul class="files">
+                <li>files will be here</li>
+            </ul>
+        </div>
+    </body>
+</html>
